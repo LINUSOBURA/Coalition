@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<title>Tech Care</title>
+</head>
+
+<body>
+	<secttion class="navigation">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/TestLogo.svg" alt="Tech care Logo">
+			</div>
+			<div class="nav-links">
+				<span><img src="images/home_FILL0_wght300_GRAD0_opsz24.svg" alt="home"> Overview
+				</span>
+				<span class="patients"><img src="images/group_FILL0_wght300_GRAD0_opsz24.svg" alt="Patient">
+					Patients</span>
+				<span><img src="images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="calendar"> Schedule</span>
+				<span><img src="images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt="chat"> Message</span>
+				<span><img src="images/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="credit card">
+					Transactions</span>
+			</div>
+			<div class="profile">
+				<div class="profile-info">
+					<img src="images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+						alt="">
+					<p><b>Dr. Jose Simmons</b> <br> General Pactitioner</p>
+				</div>
+				<div class="settings">
+					<img src="images/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="settings">
+					<img src="images/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="vertical">
+				</div>
+			</div>
+		</div>
+	</secttion>
+
+	<section class="body">
+		<div class="flex-container">
+			<div class="patients-list">
+				<span>Patients <img src="images/search_FILL0_wght300_GRAD0_opsz24.svg" alt="search"></span>
+			</div>
+			<div class="diagnosis-col">
+				<div class="diagnosis">
+					<h3 class="column-label">Diagnosis History</h3>
+					<div class="chart">
+						<div class="chart-first-col">
+							<div class="bloodpressure-detail">
+								<h5>Blood Pressure</h5>
+								<p>last 6 months <img src="images/expand_more_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+								</p>
+							</div>
+							<canvas id="bloodPressure"></canvas>
+						</div>
+						<div class="side-labels">
+							<div class="side-label" id="systolic-label">
+								<div style="display: flex; align-items: center; gap: 0.5rem;">
+									<div class="circle" id="sys"></div>
+									<p>Systolic</p>
+								</div>
+								<span id="systolic-value"></span>
+								<p id="systolic-levels"><img src="images/ArrowUp.svg" alt="Arrow up"> </p>
+							</div>
+							<div class="side-label" id="diastolic-label">
+								<div style="display: flex; align-items: center; gap: 0.5rem;">
+									<div class="circle" id="dias"></div>
+									<p>Diastolic</p>
+								</div>
+								<span id="diastolic-value"></span>
+								<p id="diastolic-levels"><img src="images/ArrowDown.svg" alt="Arrow up"> </p>
+							</div>
+						</div>
+					</div>
+					<div class="stats">
+						<div class="Rrate">
+							<img src="images/respiratory rate.svg" alt="respiratory rate">
+							<div class="respiratory-info info">
+							</div>
+						</div>
+						<div class="Temperature">
+							<img src="images/temperature.svg" alt="temperature">
+							<div class="temperature-info info">
+							</div>
+						</div>
+						<div class="HeartRate">
+							<img src="images/HeartBPM.svg" alt="heart rate">
+							<div class="heartrate-info info">
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="diagnostic-list">
+					<h3 class="column-label">Diagnostic List</h3>
+					<table id="diagnostic-table">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Description</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody class="diagnostic-items">
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="patient-info-col">
+				<div class="patient-info">
+
+				</div>
+
+				<div class="lab-results">
+					<h3 class="column-label">Lab Results</h3>
+				</div>
+			</div>
+
+	</section>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>

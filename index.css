@@ -1,0 +1,337 @@
+* {
+  font-family: Manrope;
+  color: #072635;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background: #f6f7f8;
+  padding: 1rem;
+  max-height: 100vh;
+}
+
+span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* navigation section */
+
+.navbar {
+  display: flex;
+  background: #ffffff;
+  border-radius: 30px;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 14px;
+}
+
+.logo img {
+  width: 211px;
+  height: 48px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.nav-links span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links img {
+  width: 17px;
+  height: 17px;
+}
+
+.patients {
+  background: #01f0d0 0% 0% no-repeat padding-box;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-right: 1px solid #cbcbcb;
+  padding-right: 1rem;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.flex-container .patients-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.25;
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.patients-list span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.flex-container .diagnosis-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.5;
+}
+
+.diagnosis-col {
+  max-height: 100vh;
+}
+.diagnosis-col .diagnosis {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.diagnosis-col .diagnostic-list {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  margin-top: 1.5rem;
+}
+
+.column-label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.flex-container .patient-info-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.25;
+}
+.patient-info-col .patient-info {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+}
+
+.patient-info-col .lab-results {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  margin-top: 1.5rem;
+}
+
+.chart {
+  min-width: 100%;
+  background: #f4f0fe;
+  min-height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.chart .chart-first-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  flex-grow: 0.7;
+}
+
+.chart .side-lebels {
+  min-width: 30%;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#sys {
+  background: #e66fd2;
+}
+
+#dias {
+  background: #8c6fe6;
+}
+
+#systolic-label {
+  display: flex;
+  flex-direction: column;
+}
+
+#diastolic-label {
+  display: flex;
+  flex-direction: column;
+}
+
+#systolic-value {
+  font-size: 22px;
+  margin: 0;
+}
+#diastolic-value {
+  margin: 0;
+  padding: 0;
+}
+
+.chart .bloodpressure-detail {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.stats span {
+  margin: 0;
+  padding: 0;
+}
+
+.stats .Rrate {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-content: space-between;
+  background: #e0f3fa;
+  flex-grow: 0.3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.stats .Temperature {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background: #ffe6e9;
+  flex-grow: 0.3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.stats .HeartRate {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background: #ffe6f1;
+  flex-grow: 0.3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.heartrate-info p img {
+  width: 10px;
+  height: 5px;
+}
+
+.info span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stats img {
+  height: 96px;
+  width: 96px;
+}
+
+.patient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.patient img {
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+}
+
+.patient .more-horiz {
+  width: 18px;
+  height: 4px;
+}
+
+.single-patient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient-details .info {
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  width: 42px;
+  height: 42px;
+  margin-right: 1rem;
+}
+
+.lab-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#diagnostic-table {
+  width: 100%;
+  border: none;
+  overflow-y: scroll;
+}
+
+#diagnostic-table thead {
+  background: #f6f7f8;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.all-information {
+  background: #01f0d0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.patient-profile {
+  display: flex;
+  align-items: center;
+}
